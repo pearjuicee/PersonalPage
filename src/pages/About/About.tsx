@@ -5,7 +5,7 @@ const About = () => {
     <main className="about">
       <section className="about-content">
         <h1 className="about-greeting">hi!</h1>
-        <h2 className="about-subtitle">I'm a CS student <span className="highlight">@ </span>McGill University</h2>
+        <h2 className="about-subtitle">i'm a CS student <span className="highlight">@ </span>McGill University</h2>
         <div className="about-experiences">
           <h3>experiences:</h3>
           <ul>

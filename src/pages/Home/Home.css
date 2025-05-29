@@ -1,12 +1,13 @@
 .home {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-    min-height: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 0;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .hero {
@@ -14,7 +15,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    transform: translateY(-3rem);
+    margin-top: -3rem;
 }
 
 .hero-title {
@@ -26,7 +27,7 @@
 }
 
 .highlight {
-    color: red
+    color: #D62525;
 }
 
 .hero-subtitle {
@@ -55,7 +56,7 @@
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: red;
+    background-color: #D62525;
     transition: width 0.3s ease;
 }
 

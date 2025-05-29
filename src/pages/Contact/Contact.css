@@ -1,0 +1,79 @@
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.contact-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: -3rem;
+}
+
+.contact-greeting {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-link {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease; 
+}
+
+.contact-link:hover {
+    color: #D62525; /* Change to your desired hover color */
+}
+
+.contact-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: #D62525;
+    transition: width 0.3s ease;
+}
+  
+.contact-link:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-greeting {
+        font-size: 2rem;
+    }
+
+    .contact {
+        padding-top: 4rem;
+    }
+}

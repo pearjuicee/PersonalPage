@@ -1,8 +1,8 @@
 .about {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-    min-height: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    transform: translateY(-3rem);
+    margin-top: -3rem;
 }
 
 .about-greeting {
@@ -62,7 +62,7 @@
     content: "-";
     position: absolute;
     left: 0;
-    color: red;
+    color: #D62525;
 }
 
 .resume-link {
@@ -74,5 +74,24 @@
 }
 
 .resume-link:hover {
-    color: red;
+    color: #D62525;
 }
+
+@media (max-width: 768px) {
+    .about {
+      padding: 1rem;
+      padding-top: 4rem;
+    }
+    
+    .about-greeting {
+      font-size: 2rem;
+    }
+    
+    .about-subtitle {
+      font-size: 1.2rem;
+    }
+    
+    .about-experiences li {
+      font-size: 1rem;
+    }
+  }
