@@ -1,0 +1,58 @@
+.portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Work Sans', Courier, monospace;
+    margin-top: 7rem;
+  }
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.portfolio-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #D62525;
+    font-style: italic;
+}
+
+.projects-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 1rem 0;
+}
+
+.projects-section .project-card {
+    margin-bottom: 3rem;
+    max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .projects-section {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio {
+      padding: 2rem 1rem;
+    }
+  
+    .portfolio-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .projects-section {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+      gap: 1.5rem;
+    }
+  }

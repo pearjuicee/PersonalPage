@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import About from "./pages/About/About.tsx";
-import Portfolio from "./pages/Portfolio.tsx";
+import Portfolio from "./pages/Portfolio/Portfolio.tsx";
 import Contact from "./pages/Contact/Contact.tsx";
 import Home from "./pages/Home/Home.tsx";
 
