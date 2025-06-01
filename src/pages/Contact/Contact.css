@@ -17,6 +17,7 @@
     margin: 0 auto;
     padding: 2rem;
     margin-top: -3rem;
+    position: relative;
 }
 
 .contact-greeting {
@@ -80,6 +81,13 @@
   
 .contact-link:hover::after {
     width: 100%;
+}
+
+.pear {
+    position: fixed;
+    bottom: 15rem; /* Distance from bottom */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
