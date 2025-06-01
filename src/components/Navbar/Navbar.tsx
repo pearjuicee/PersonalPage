@@ -10,7 +10,9 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <NavLink to="/" className="site-name">Shirley Ding</NavLink>
+      <NavLink to="/" className="site-name">
+        Shirley<br />Ding
+      </NavLink>
       <nav className="vertical-nav">
         {navItems.map((item) => (
           <NavLink

@@ -20,7 +20,10 @@ const About = () => {
           rel="noopener noreferrer"
           className="resume-link"
         >
-          📄resume
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 34" fill="none" className="resume-icon">
+            <path d="M18.75 12.9167L25 19.375M25 19.375L18.75 25.8334M25 19.375H10C8.67392 19.375 7.40215 18.8307 6.46447 17.8617C5.52678 16.8928 5 15.5786 5 14.2084V5.16669" stroke="#828282" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>resume</span>
         </a>
       </section>
     </main>

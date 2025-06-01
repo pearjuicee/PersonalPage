@@ -8,10 +8,11 @@
     justify-content: center;
     padding-top: 0;
     font-family: 'Work Sans', sans-serif;
+    text-align: center;
 }
 
 .contact-content {
-    text-align: center;
+    text-align: left;
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
@@ -21,46 +22,59 @@
 .contact-greeting {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
-.contact-title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #004AAD;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 0;
 }
 
 .contact-methods {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding-left: 12px;
+}
+
+.contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.contact-icon {
+    flex-shrink: 0;
 }
 
 .contact-link {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.1rem;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #4A4A4A;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease; 
 }
 
 .contact-link:hover {
-    color: #D62525; /* Change to your desired hover color */
+    color: #C46327; 
 }
 
 .contact-link::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -4px;
     width: 0;
-    height: 1px;
-    background-color: #D62525;
+    height: 2px;
+    background-color: #C46327;
     transition: width 0.3s ease;
 }
   

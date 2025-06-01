@@ -28,7 +28,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 1);
+  background: #F8F7F3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +44,7 @@
   
 .description {
   font-family: 'Montserrat', sans-serif;
-  color: #D62525;
+  color: #4A4A4A;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 500;
@@ -54,6 +54,7 @@
 .project-info {
   margin-top: 0.5rem;
   text-align: left;
+  color: #4A4A4A;
   padding: 0 0.5rem;
 }
   
@@ -62,32 +63,30 @@
   font-weight: 600;
   font-size: 1.3rem;
   margin: 0.3rem 0;
-  color: #D62525;
   transition: color 0.3s ease;
 }
   
-  .project-date {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 0.9rem;
-    color: #666;
+.project-date {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9rem;
+}
+  
+/* Grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+/* Mobile touch adaptation */
+@media (hover: none) {
+  .overlay {
+    opacity: 0.8;
+    background: #F8F7F3;
   }
   
-  /* Grid layout */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem 0;
+  .project-subtitle {
+    color: #4A4A4A;
   }
-  
-  /* Mobile touch adaptation */
-  @media (hover: none) {
-    .overlay {
-      opacity: 0.8;
-      background: rgba(255, 255, 255, 0.95);
-    }
-    
-    .project-subtitle {
-      color: #D62525;
-    }
-  }
+}
