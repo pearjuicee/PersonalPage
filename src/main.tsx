@@ -7,18 +7,23 @@ import Portfolio from "./pages/Portfolio/Portfolio.tsx";
 import Contact from "./pages/Contact/Contact.tsx";
 import Home from "./pages/Home/Home.tsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "/about", element: <About /> },
+        { path: "/portfolio", element: <Portfolio /> },
+        { path: "/contact", element: <Contact /> },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: "/about", element: <About /> },
-      { path: "/portfolio", element: <Portfolio /> },
-      { path: "/contact", element: <Contact /> },
-    ],
-  },
-]);
+    basename: "/shirley-portfolio",
+  }
+);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
