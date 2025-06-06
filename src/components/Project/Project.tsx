@@ -10,7 +10,7 @@ interface ProjectProps {
   image?: string;
 }
 
-const Project = ({ title, date, description, tags, link, image}) => {
+const Project = ({ title, date, description, tags, link, image}: ProjectProps) => {
   return (
     <Link to={link || "#"} className="project-card" target="_blank" rel="noopener noreferrer">
       <div className="image-container">
@@ -19,7 +19,7 @@ const Project = ({ title, date, description, tags, link, image}) => {
           <p className="description">{description}</p>
           {tags && (
             <div className="tags">
-              {tags.map((tag, index) => (
+              {tags.map((tag: string, index: number) => (
                 <span key={index} className="tag">
                   {tag}
                 </span>
