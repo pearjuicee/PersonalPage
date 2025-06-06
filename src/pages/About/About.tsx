@@ -15,7 +15,7 @@ const About = () => {
           </ul>
         </div>
         <a
-          href="https://drive.google.com/file/d/1xDHxLbk3xZ2pooBfV2qMOQnxyrowgCk1/view?usp=sharing"
+          href="https://drive.google.com/file/d/1GrojRfyhZnz39TNvAew7EJspyk84HCPK/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="resume-link"

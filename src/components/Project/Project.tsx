@@ -17,6 +17,15 @@ const Project = ({ title, date, description, tags, link, image}) => {
         <img src={image} alt={title} className="project-image" />
         <div className="overlay">
           <p className="description">{description}</p>
+          {tags && (
+            <div className="tags">
+              {tags.map((tag, index) => (
+                <span key={index} className="tag">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       </div>
       <div className="project-info">
